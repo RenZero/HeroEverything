@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1829616-1c3d-4a83-be33-109bf6f16588" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco.png" afterPath="$PROJECT_DIR$/eco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bramus/percentImage_back.png" afterPath="$PROJECT_DIR$/images/bramus/percentImage_back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.php" afterPath="$PROJECT_DIR$/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blood.php" afterPath="$PROJECT_DIR$/blood.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate.php" afterPath="$PROJECT_DIR$/donate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrate/insert_data_user.php" afterPath="$PROJECT_DIR$/migrate/insert_data_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bramus/jsProgressBarHandler.js" afterPath="$PROJECT_DIR$/js/bramus/jsProgressBarHandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/cron.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/dec.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/inc.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blood.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/donate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eco.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hpMachine/hpDaemon.py" afterPath="$PROJECT_DIR$/hpMachine/hpDaemon.py" />
     </list>
     <ignored path="HeroEverything.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,26 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blood.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blood.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1296296" vertical-offset="2387" max-vertical-offset="5220">
-              <caret line="151" column="28" selection-start-line="147" selection-start-column="12" selection-end-line="152" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1434271605000" expanded="true" signature="7033:7064" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="7107:7213" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="8550:8641" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="8562:8641" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="8936:9035" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="8948:9035" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="9329:9345" placeholder="..." />
-                <marker date="1434271605000" expanded="true" signature="9436:9499" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,55 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="1332">
-              <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1434271606000" expanded="true" signature="176:223" placeholder="select useri..User..." />
-                <marker date="1434271606000" expanded="true" signature="754:913" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/donate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="648">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27725857" vertical-offset="758" max-vertical-offset="3672">
-              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-              <folding>
-                <marker date="1434271694000" expanded="true" signature="689:734" placeholder="select useri..User..." />
-                <marker date="1434271694000" expanded="true" signature="892:989" placeholder="INSERT INTO ..." />
-                <marker date="1434271694000" expanded="true" signature="2007:2104" placeholder="select barid..Bar..." />
-                <marker date="1434271694000" expanded="true" signature="3079:3171" placeholder="select barid..Bar..." />
-                <marker date="1434271694000" expanded="true" signature="4064:4110" placeholder="select useri..User..." />
-                <marker date="1434271694000" expanded="true" signature="4271:4308" placeholder="select barid..Bar..." />
-                <marker date="1434271694000" expanded="true" signature="5022:5051" placeholder="DELETE FROM ..." />
-                <marker date="1434271694000" expanded="true" signature="5840:5891" placeholder="select vol_c..Bar..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -311,14 +248,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/donate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="648">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/prototype/prototype.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0" vertical-offset="27" max-vertical-offset="76068">
@@ -339,49 +268,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blood.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1296296" vertical-offset="2387" max-vertical-offset="5220">
-          <caret line="151" column="28" selection-start-line="147" selection-start-column="12" selection-end-line="152" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1434271605000" expanded="true" signature="7033:7064" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="7107:7213" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="8550:8641" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="8562:8641" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="8936:9035" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="8948:9035" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="9329:9345" placeholder="..." />
-            <marker date="1434271605000" expanded="true" signature="9436:9499" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="1332">
-          <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1434271606000" expanded="true" signature="176:223" placeholder="select useri..User..." />
-            <marker date="1434271606000" expanded="true" signature="754:913" placeholder="insert into ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,20 +289,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27725857" vertical-offset="758" max-vertical-offset="3672">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-          <folding>
-            <marker date="1434271694000" expanded="true" signature="689:734" placeholder="select useri..User..." />
-            <marker date="1434271694000" expanded="true" signature="892:989" placeholder="INSERT INTO ..." />
-            <marker date="1434271694000" expanded="true" signature="2007:2104" placeholder="select barid..Bar..." />
-            <marker date="1434271694000" expanded="true" signature="3079:3171" placeholder="select barid..Bar..." />
-            <marker date="1434271694000" expanded="true" signature="4064:4110" placeholder="select useri..User..." />
-            <marker date="1434271694000" expanded="true" signature="4271:4308" placeholder="select barid..Bar..." />
-            <marker date="1434271694000" expanded="true" signature="5022:5051" placeholder="DELETE FROM ..." />
-            <marker date="1434271694000" expanded="true" signature="5840:5891" placeholder="select vol_c..Bar..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
