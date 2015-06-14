@@ -10,7 +10,7 @@ $app = new \Slim\Slim();
 $app->post('/new/', function () {
 	if(!empty($_POST['email']) and !empty($_POST['passwd']) and !empty($_POST['name']) and !empty($_POST['title']) and !empty($_POST['type']) and !empty($_POST['unit']) and !empty($_POST['vol_max']) and !empty($_POST['vol_current']) and !empty($_POST['cron']))
 	{
-		$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything';
+		$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
 		$user = 'hanbz';
 		$password = '1qaz2wsx';
 
@@ -21,25 +21,28 @@ $app->post('/new/', function () {
 		}
 
 		$sth = $dbh->prepare('select userid,passwd from User where email =?');
-		$sth->execute(array('test@test.test'));
+		$sth->execute(array($_POST['email']));
 		$result = $sth->fetchAll();
-		if($_POST['passwd'] == $result[0]['passwd'])
-		{
-			$sth = $dbh->prepare('INSERT INTO `Bar` (userid,unit,type,name,title,vol_current,vol_max,cron) VALUES (?,?,?,?,?,?,?,?);');
-			$sth->execute(
-				array(
-					$result[0]['userid'],
-					$_POST['unit'],
-					$_POST['type'],
-					$_POST['name'],
-					$_POST['title'],
-					$_POST['vol_current'],
-					$_POST['vol_max'],
-					$_POST['cron']
-					)
-				);
-			echo json_encode(array("status" => "success","message" => "成功新增血條資料"));
-		}
+		if($_POST['passwd'] == $result[0]['passwd']) {
+            $sth = $dbh->prepare('INSERT INTO `Bar` (userid,unit,type,name,title,vol_current,vol_max,cron) VALUES (?,?,?,?,?,?,?,?);');
+            $sth->execute(
+                array(
+                    $result[0]['userid'],
+                    $_POST['unit'],
+                    $_POST['type'],
+                    $_POST['name'],
+                    $_POST['title'],
+                    $_POST['vol_current'],
+                    $_POST['vol_max'],
+                    $_POST['cron']
+                )
+            );
+            echo json_encode(array("status" => "success", "message" => "成功新增血條資料"));
+        }else
+        {
+            echo json_encode(array("status" => "fail", "message" => "帳號密碼錯誤"));
+            exit;
+        }
 	}else
 	{
 		echo json_encode(array("status" => "fail","message" => "請輸入完整血條資料"));
@@ -71,8 +74,8 @@ $app->get('/get/:barid', function($barid){
 			'type' => $result['type'] ,
 			'name' => $result['name'] ,
 			'title' => $result['title'] ,
-			'vol_current' => $result['vol_current'] ,
-			'vol_max' => $result['vol_max'] ,
+			'vol_current' => (int)$result['vol_current'] ,
+			'vol_max' => (int)$result['vol_max'] ,
 			'cron' => $result['cron'] ,
 			'privacy' => $result['privacy']
 			),JSON_UNESCAPED_UNICODE);
@@ -85,7 +88,7 @@ $app->get('/get/:barid', function($barid){
 
 //取得使用者全部血條資料
 $app->post('/getlist/', function(){
-	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything';
+	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
 	$user = 'hanbz';
 	$password = '1qaz2wsx';
 
@@ -145,7 +148,7 @@ $app->post('/getlist/', function(){
 
 //刪除血條
 $app->post('/del/', function(){
-	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything';
+	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
 	$user = 'hanbz';
 	$password = '1qaz2wsx';
 
@@ -164,7 +167,7 @@ $app->post('/del/', function(){
 
 //觸發血條動作
 $app->post('/trigger/', function(){
-	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything';
+	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
 	$user = 'hanbz';
 	$password = '1qaz2wsx';
 
@@ -175,7 +178,7 @@ $app->post('/trigger/', function(){
 	}
 
 	if(isset($_POST['barid']) and isset($_POST['action']) and isset($_POST['vol'])){
-		if($_POST['action']=='add'){
+		if($_POST['action']=='inc'){
 			$value = $_POST['vol'];
 		}elseif ($_POST['action']=='dec') {
 			$value = (0-$_POST['vol']);
