@@ -22,7 +22,9 @@
     </script>
 </head>
 <BODY>
+<br><br><br><br><br><br><br><br>
 <center>
+    <h3>請點選希望的種子(誤)，灌溉希望</h3><br><br>
     <button type="button" id="donate"><img width="150" src="./eco.png"></button>
 </center>
 </BODY>

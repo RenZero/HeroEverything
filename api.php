@@ -11,7 +11,7 @@ $app->post('/new/', function () {
 	if(!empty($_POST['email']) and !empty($_POST['passwd']) and !empty($_POST['name']) and !empty($_POST['title']) and !empty($_POST['type']) and !empty($_POST['unit']) and !empty($_POST['vol_max']) and !empty($_POST['vol_current']) and !empty($_POST['cron']))
 	{
 		$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
-		$user = 'hanbz';
+		$user = 'xxxx';
 		$password = '1qaz2wsx';
 
 		try {
@@ -52,7 +52,7 @@ $app->post('/new/', function () {
 //查詢單筆血條資料
 $app->get('/get/:barid', function($barid){
 	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
-	$user = 'hanbz';
+	$user = 'xxxxx';
 	$password = '1qaz2wsx';
 
 	try {
@@ -89,7 +89,7 @@ $app->get('/get/:barid', function($barid){
 //取得使用者全部血條資料
 $app->post('/getlist/', function(){
 	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
-	$user = 'hanbz';
+	$user = 'xxxxx';
 	$password = '1qaz2wsx';
 
 	try {
@@ -149,7 +149,7 @@ $app->post('/getlist/', function(){
 //刪除血條
 $app->post('/del/', function(){
 	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
-	$user = 'hanbz';
+	$user = 'xxxxx';
 	$password = '1qaz2wsx';
 
 	try {
@@ -168,7 +168,7 @@ $app->post('/del/', function(){
 //觸發血條動作
 $app->post('/trigger/', function(){
 	$dsn = 'mysql:host=127.0.0.1;dbname=heroeverything;charset=utf8';
-	$user = 'hanbz';
+	$user = 'xxxxx';
 	$password = '1qaz2wsx';
 
 	try {
