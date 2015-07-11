@@ -5,9 +5,9 @@ Under construction
 目錄結構
 ```
 /www/  儲存主網站根目錄開始之所有資料
-/www/js/
-/www/images/
-/www/api/v1/  集中所有API (我還是希望可以不要都塞在api.php)，後面帶版本號
+/www/heroeverything   網頁介面
+/www/heroeverythingAPI   API專案
+/www/heroeverything_org   黑客松初始版本
 /database/ 儲存DB Schema\script\dummy data之類
 /device/  儲存自行開發設備之設計圖
 /device/hpMachine  基礎血條顯示器開發代號
