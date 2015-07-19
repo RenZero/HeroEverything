@@ -25,6 +25,9 @@ class Bar extends Migration
             $table->string('cron');
             $table->string('api_key')->nullable();
             $table->string('privacy')->nullable();
+            $table->string('alertdefine')->nullable();
+            $table->string('eventqueue')->nullable();
+            $table->timestamps('lastupdate');
             $table->softDeletes();
             $table->timestamps();
         });
