@@ -15,7 +15,7 @@
     return view('welcome');
 });*/
 
-Route::get('/','IndexController@index');
+Route::get('/', 'IndexController@index');
 
 Route::post('get', 'BloodApiController@get');
 
@@ -24,3 +24,7 @@ Route::post('newbyaccount', 'BloodApiController@newbyaccount');
 Route::post('getlist', 'BloodApiController@getlist');
 
 Route::post('del', 'BloodApiController@del');
+
+Route::get('auth', ['middleware' => 'auth', function () {
+    echo 'test';
+}]);
