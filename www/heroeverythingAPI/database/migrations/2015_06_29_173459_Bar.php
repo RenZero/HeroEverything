@@ -27,7 +27,7 @@ class Bar extends Migration
             $table->string('privacy')->nullable();
             $table->string('alertdefine')->nullable();
             $table->string('eventqueue')->nullable();
-            $table->timestamps('lastupdate');
+            $table->timestamp('lastupdate');
             $table->softDeletes();
             $table->timestamps();
         });
