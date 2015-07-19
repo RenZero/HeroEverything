@@ -19,7 +19,7 @@ class BloodApiController extends Controller
 {
     protected $Bar,$User;
 
-    public function __construct(Bar $Bar,User $User){
+    public function __construct(Bar $Bar, User $User){
         $this->Bar = $Bar;
         $this->User = $User;
     }
