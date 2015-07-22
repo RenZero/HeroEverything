@@ -17,14 +17,16 @@ class Bar extends Migration
             $table->increments('barid');
             $table->integer('userid');
             $table->string('unit');
+            $table->double('exrate');
             $table->string('type');
             $table->string('name');
             $table->string('title');
             $table->integer('vol_max');
             $table->integer('vol_current');
+            $table->integer('cashflow');
+            $table->string('read_privacy');
+            $table->string('write_privacy');
             $table->string('cron');
-            $table->string('api_key')->nullable();
-            $table->string('privacy')->nullable();
             $table->string('alertdefine')->nullable();
             $table->string('eventqueue')->nullable();
             $table->timestamp('lastupdate');
