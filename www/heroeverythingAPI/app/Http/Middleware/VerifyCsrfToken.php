@@ -12,6 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        "get", "newbyaccount", "getlist", "del" , "auth"
+        "newBar", "editBar", "readBar", "readPicBar", "readListBar", "delBar", "writeBar", "cronBar", "eventBar", "alertBar",
+        "auth",
     ];
 }

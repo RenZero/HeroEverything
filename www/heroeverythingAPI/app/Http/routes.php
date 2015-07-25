@@ -17,13 +17,16 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::post('get', 'BloodApiController@get');
-
-Route::post('newbyaccount', 'BloodApiController@newbyaccount');
-
-Route::post('getlist', 'BloodApiController@getlist');
-
-Route::post('del', 'BloodApiController@del');
+Route::post('newBar', 'HealthApiController@newBar');
+Route::post('editBar', 'HealthApiController@editBar');
+Route::post('readBar', 'HealthApiController@readBar');
+//Route::post('readPicBar', 'HealthApiController@readPicBar');
+Route::post('readListBar', 'HealthApiController@readListBar');
+Route::post('delBar', 'HealthApiController@delBar');
+Route::post('writeBar', 'HealthApiController@writeBar');
+Route::post('cronBar', 'HealthApiController@cronBar');
+Route::post('eventBar', 'HealthApiController@eventBar');
+Route::post('alertBar', 'HealthApiController@alertBar');
 
 Route::get('auth', ['middleware' => 'auth', function () {
     echo 'test';

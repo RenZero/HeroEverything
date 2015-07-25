@@ -16,21 +16,18 @@ class User extends Model
      * @param string $passwd
      * @return bool
      */
-    public function CheckMember($email = '', $passwd = '')
+    public function checkMember($email = '', $passwd = '')
     {
         $pw = User::where('email', '=', $email)->pluck('passwd');
-        if (Hash::check($passwd, $pw)) {
+        if (Hash::check($passwd, $pw))
             return true;
-        } else {
+        else
             return false;
-        }
     }
 
-    public function GetUserId($email){
+    public function getUserId($email)
+    {
         return User::where('email', '=', $email)->pluck('userid');
     }
 
-    public function GetBarList($email){
-        return User::where('email', '=', $email)->pluck('bar_list');
-    }
 }
