@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="ajax/ajax_function.js"></script>
+        <script type = "text/javascript">
+            function tryConsole(str) {
+                if (str=='warn') {
+                    console.warn("hello world %s",str);
+                } else if (str=='error') {
+                    console.error("hello world %s",str);
+                } else if (str=='info') {
+                    console.info("hello world %s",str);
+                } else if (str=='dir') {
+                    console.dir(document);
+                } else {
+                    console.log("hello world %s",str);
+                }
+            }
+
+
+            var data = [
+                {"Id": 10004, "PageName": "club"},
+                {"Id": 10040, "PageName": "qaz"},
+                {"Id": 10059, "PageName": "jjjjjjj"}
+            ];
+            
+            $.each(data, function(i, item) {
+                alert(data[i].PageName);
+            });​
+
+            $.each(data, function(i, item) {
+                alert(item.PageName);
+            });​
+        </script>
+
+
+    </head>
+    <body onload="tryConsole('consoleTest')">
+	<div id="userid">1231</div>
+    <div id="unit">1231</div>
+    <div id="name">1231</div>
+    <B id="vol_current">1231</B>/<B id="vol_max">1231</B>
+    <br><br>
+    <input type="button" name="ajax" id="ajax" value="ajax"/>
+    </body>
+</html>

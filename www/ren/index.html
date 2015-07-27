@@ -21,152 +21,156 @@
     <link href="css/index-dropdown.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
-
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <!-- index-dropdown JS -->
     <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
     <script type="text/javascript" src="js/index-dropdown.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-    <div class="active-links">
-        <div id="session">
-            <a id="signin-link" href="#">
-                <em>Have an account?</em>
-                <strong>Sign in</strong>
-            </a>
-        </div>
-        <div id="signin-dropdown">
-            <form method="post" class="signin" action="#">
-                <fieldset class="textbox">
-                    <label class="username">
-                        <span>Username or email</span>
-                        <input id="username" name="username" value="" type="text" autocomplete="on">
-                    </label>
-
-                    <label class="password">
-                        <span>Password</span>
-                        <input id="password" name="password" value="" type="password">
-                    </label>
-                </fieldset>
-
-                <fieldset class="remb">
-                    <label class="remember">
-                        <input type="checkbox" value="1" name="remember_me" />
-                        <span>Remember me</span>
-                    </label>
-                    <button class="submit button" type="button">Sign in</button>
-                </fieldset>
-                <p>
-                    <a class="forgot" href="#">Forgot your password</a>
-                    <br>
-                    <a class="mobile" href="#">Already using Twitter via SMS?</a>
-                </p>
-            </form>
-        </div>
+<div class="active-links">
+    <div id="session">
+        <a id="signin-link" href="#">
+            <em>Have an account?</em>
+            <strong>Sign in</strong>
+        </a>
     </div>
+    <div id="signin-dropdown">
+        <form method="post" class="signin" action="#">
+            <fieldset class="textbox">
+                <label class="username">
+                    <span>Username or email</span>
+                    <input id="username" name="username" value="" type="text" autocomplete="on">
+                </label>
 
-    <div class="brand">Hero Everything</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+                <label class="password">
+                    <span>Password</span>
+                    <input id="password" name="password" value="" type="password">
+                </label>
+            </fieldset>
 
+            <fieldset class="remb">
+                <label class="remember">
+                    <input type="checkbox" value="1" name="remember_me"/>
+                    <span>Remember me</span>
+                </label>
+                <button class="submit button" type="button">Sign in</button>
+            </fieldset>
+            <p>
+                <a class="forgot" href="#">Forgot your password</a>
+                <br>
+                <a class="mobile" href="#">Already using Twitter via SMS?</a>
+            </p>
+        </form>
+    </div>
+</div>
 
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Hero Everything</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="list-side nav navbar-nav">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="bar.html">Bar</a>
-                    </li>
-                    <li>
-                        <a href="honor.html">honor</a>
-                    </li>
-                    <li>
-                        <a href="donate.html">donate</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<div class="brand">Hero Everything</div>
+<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
 
-
-
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
     <div class="container">
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-
-                    <div id="iframe">
-                        <!--jquery 插入html 位址-->
-                    </div>
-
-                </div>
-            </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+            <a class="navbar-brand" href="index.html">Hero Everything</a>
         </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="list-side nav navbar-nav">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="bar.html">Bar</a>
+                </li>
+                <li>
+                    <a href="honor.html">honor</a>
+                </li>
+                <li>
+                    <a href="donate.html">donate</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
+</nav>
 
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>!!!Copyright &copy; Your Website 2014</p>
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+
+                <div id="iframe">
+                    <!--jquery 插入html 位址-->
                 </div>
+
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+<!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>!!!Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    </script>
+</script>
 
 </body>
 

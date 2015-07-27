@@ -13,7 +13,12 @@ $(document).ready(function(){
                 dataType:'json',
                 success: function(msg){
                     $('#content').html(msg.name);
-		    console.log(msg);
+                    $('#content1').html(msg.vol_max);
+                    $('#content2').html(msg.cron);
+                    $('#content3').html(msg.created_at);
+                    $('#content4').html(msg.unit);
+
+		            console.log(msg);
                 }
             });
 	});
@@ -22,6 +27,10 @@ $(document).ready(function(){
     </head>
     <body>
 	<div id="content">1231</div>
+    <div id="content1">1231</div>
+    <div id="content2">1231</div>
+    <div id="content3">1231</div>
+    <div id="content4">1231</div>
             <input type="button" name="ajax" id="ajax" value="ajax"/>
     </body>
 </html>
